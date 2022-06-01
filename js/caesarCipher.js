@@ -36,6 +36,25 @@ exports.caesarCipher = function (str, num) {
   return arr.join("");
 };
 
+// const singleUpperCase = function (str) {
+//   return str === str.toUpperCase();
+// };
+
+// const caesarCipher = function (str, num) {
+//   let res = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (!/^[a-z]+$/i.test(str[i])) {
+//       res += str[i];
+//     } else if (singleUpperCase(str[i])) {
+//       res += String.fromCharCode(((str.charCodeAt(i) + num - 65) % 26) + 65);
+//     } else {
+//       res += String.fromCharCode(((str.charCodeAt(i) + num - 97) % 26) + 97);
+//     }
+//   }
+//   return res;
+// };
+
 // console.log(caesarCipher("What", 5));
 // console.log(caesarCipher("What a string!", 5));
 // console.log(caesarCipher("Boy! What a string!", -5));
